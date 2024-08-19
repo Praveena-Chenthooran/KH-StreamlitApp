@@ -85,7 +85,7 @@ def lesson():
 
     # Column for logo
     with col1:
-        image = Image.open(r"C:\KH-StreamlitApp\KH logo.webp")
+        image = Image.open("assets/KH logo.webp")
         st.image(image, width=200)  # Adjust width to fit layout
 
     # Column for title
@@ -181,7 +181,7 @@ def feedback_tool():
 
     # Column for logo
     with col1:
-        image = Image.open(r"C:\KH-StreamlitApp\KH logo.webp")
+        image = Image.open("assets/KH logo.webp")
         st.image(image, width=200)
 
     # Column for title
@@ -264,7 +264,7 @@ def student_support():
 
     # Column for logo
     with col1:
-        image = Image.open(r"C:\KH-StreamlitApp\KH logo.webp")
+        image = Image.open("assets/KH logo.webp")
         st.image(image, width=200)
 
     # Column for title
@@ -369,7 +369,7 @@ def content_editor():
 
     # Column for logo
     with col1:
-        image = Image.open(r"C:\KH-StreamlitApp\KH logo.webp")
+        image = Image.open("assets/KH logo.webp")
         st.image(image, width=200)
 
     # Column for title
@@ -462,7 +462,7 @@ def SEO(file_path):
 
     # Column for logo
     with col1:
-        image = Image.open(r"C:\KH-StreamlitApp\KH logo.webp")
+        image = Image.open("assets/KH logo.webp")
         st.image(image, width=200)
 
     # Column for title
@@ -630,7 +630,7 @@ def report_tool():
 
     # Column for logo
     with col1:
-        image = Image.open(r"C:\KH-StreamlitApp\KH logo.webp")
+        image = Image.open("assets/KH logo.webp")
         st.image(image, width=200)
 
     # Column for title
