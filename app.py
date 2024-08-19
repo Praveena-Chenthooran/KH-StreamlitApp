@@ -6,6 +6,7 @@ import streamlit as st
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+import os
 
 # General Setup
 st.set_page_config(layout='wide')
@@ -81,17 +82,17 @@ def curate_detailed_lesson(background_info, misconceptions, remedial_handouts, t
 # Lesson Curator UI
 def lesson():
     # Title and logo side by side
-    col1, col2 = st.columns([1, 9])
+    col1, col2 = st.columns([1, 25])
 
     # Column for logo
     with col1:
         image = Image.open("assets/KH logo.webp")
-        st.image(image, width=150)  # Adjust width to fit layout
+        st.image(image, width=100)  # Adjust width to fit layout
 
     # Column for title
     with col2:
         st.markdown("""
-            <h1 style='text-align: left; margin-bottom: 0; padding-bottom: 0; font-size: 3em; line-height: 1.2;'>
+            <h1 style='text-align: left; margin-bottom: 0; padding-bottom: 0; font-size: 4em; line-height: 1.2;'>
                 <span style='color: #1B9CE4;'>KnowledgeHook</span>
                 <span style='color: black;'> | AI Exploration</span>
             </h1>
@@ -177,17 +178,17 @@ def generate_feedback(lesson_text, background_info, misconceptions, remedial_han
 # Feedback Tool UI
 def feedback_tool():
     # Title and logo side by side
-    col1, col2 = st.columns([1, 9])
+    col1, col2 = st.columns([1, 25])
 
     # Column for logo
     with col1:
         image = Image.open("assets/KH logo.webp")
-        st.image(image, width=150)
+        st.image(image, width=100)
 
     # Column for title
     with col2:
         st.markdown("""
-            <h1 style='text-align: left; margin-bottom: 0; padding-bottom: 0; font-size: 3em; line-height: 1.2;'>
+            <h1 style='text-align: left; margin-bottom: 0; padding-bottom: 0; font-size: 4em; line-height: 1.2;'>
                 <span style='color: #1B9CE4;'>KnowledgeHook</span>
                 <span style='color: black;'> | AI Exploration</span>
             </h1>
@@ -260,17 +261,17 @@ def generate_instructional_aid(curriculum_expectations, grade_level):
 # Student Support UI
 def student_support():
     # Title and logo side by side
-    col1, col2 = st.columns([1, 9])
+    col1, col2 = st.columns([1, 25])
 
     # Column for logo
     with col1:
         image = Image.open("assets/KH logo.webp")
-        st.image(image, width=150)
+        st.image(image, width=100)
 
     # Column for title
     with col2:
         st.markdown("""
-            <h1 style='text-align: left; margin-bottom: 0; padding-bottom: 0; font-size: 3em; line-height: 1.2;'>
+            <h1 style='text-align: left; margin-bottom: 0; padding-bottom: 0; font-size: 4em; line-height: 1.2;'>
                 <span style='color: #1B9CE4;'>KnowledgeHook</span>
                 <span style='color: black;'> | AI Exploration</span>
             </h1>
@@ -365,17 +366,17 @@ def flag_errors(question, answer):
 # Content Editor UI
 def content_editor():
     # Title and logo side by side
-    col1, col2 = st.columns([1, 9])
+    col1, col2 = st.columns([1, 25])
 
     # Column for logo
     with col1:
         image = Image.open("assets/KH logo.webp")
-        st.image(image, width=150)
+        st.image(image, width=100)
 
     # Column for title
     with col2:
         st.markdown("""
-            <h1 style='text-align: left; margin-bottom: 0; padding-bottom: 0; font-size: 3em; line-height: 1.2;'>
+            <h1 style='text-align: left; margin-bottom: 0; padding-bottom: 0; font-size: 4em; line-height: 1.2;'>
                 <span style='color: #1B9CE4;'>KnowledgeHook</span>
                 <span style='color: black;'> | AI Exploration</span>
             </h1>
@@ -456,19 +457,19 @@ def refine_results_openai(query, resources):
     return refined_results
 
 # SEO UI
-def SEO(file_path):
+def SEO():
     # Title and logo side by side
-    col1, col2 = st.columns([1, 9])
+    col1, col2 = st.columns([1, 25])
 
     # Column for logo
     with col1:
         image = Image.open("assets/KH logo.webp")
-        st.image(image, width=150)
+        st.image(image, width=100)
 
     # Column for title
     with col2:
         st.markdown("""
-            <h1 style='text-align: left; margin-bottom: 0; padding-bottom: 0; font-size: 3em; line-height: 1.2;'>
+            <h1 style='text-align: left; margin-bottom: 0; padding-bottom: 0; font-size: 4em; line-height: 1.2;'>
                 <span style='color: #1B9CE4;'>KnowledgeHook</span>
                 <span style='color: black;'> | AI Exploration</span>
             </h1>
@@ -481,6 +482,8 @@ def SEO(file_path):
         </h2>
         """, unsafe_allow_html=True)
     st.markdown("\n\n")
+
+    file_path = os.path.join('assets', 'data', 'kh_courses.csv')
 
     query = st.text_input("Enter your lesson topic or search query:", "")
     if file_path:
@@ -626,17 +629,17 @@ def generate_editor_aid(curriculum_performance):
 # Student Report Tool UI
 def report_tool():
     # Title and logo side by side
-    col1, col2 = st.columns([1, 9])
+    col1, col2 = st.columns([1, 25])
 
     # Column for logo
     with col1:
         image = Image.open("assets/KH logo.webp")
-        st.image(image, width=150)
+        st.image(image, width=100)
 
     # Column for title
     with col2:
         st.markdown("""
-            <h1 style='text-align: left; margin-bottom: 0; padding-bottom: 0; font-size: 3em; line-height: 1.2;'>
+            <h1 style='text-align: left; margin-bottom: 0; padding-bottom: 0; font-size: 4em; line-height: 1.2;'>
                 <span style='color: #1B9CE4;'>KnowledgeHook</span>
                 <span style='color: black;'> | AI Exploration</span>
             </h1>
@@ -692,8 +695,7 @@ def main():
     elif app_page == "Content Editor":
         content_editor()
     elif app_page == "SEO":
-        file_path = 'C:\KH-StreamlitApp\student_data.csv'
-        SEO(file_path)
+        SEO()
     elif app_page == "Student Report Tool":
         report_tool()
 
