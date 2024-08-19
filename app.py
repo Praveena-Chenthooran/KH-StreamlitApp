@@ -82,7 +82,7 @@ def curate_detailed_lesson(background_info, misconceptions, remedial_handouts, t
 # Lesson Curator UI
 def lesson():
     # Title and logo side by side
-    col1, col2 = st.columns([1, 25])
+    col1, col2 = st.columns([1, 8])
 
     # Column for logo
     with col1:
@@ -178,7 +178,7 @@ def generate_feedback(lesson_text, background_info, misconceptions, remedial_han
 # Feedback Tool UI
 def feedback_tool():
     # Title and logo side by side
-    col1, col2 = st.columns([1, 25])
+    col1, col2 = st.columns([1, 8])
 
     # Column for logo
     with col1:
@@ -261,7 +261,7 @@ def generate_instructional_aid(curriculum_expectations, grade_level):
 # Student Support UI
 def student_support():
     # Title and logo side by side
-    col1, col2 = st.columns([1, 25])
+    col1, col2 = st.columns([1, 8])
 
     # Column for logo
     with col1:
@@ -366,7 +366,7 @@ def flag_errors(question, answer):
 # Content Editor UI
 def content_editor():
     # Title and logo side by side
-    col1, col2 = st.columns([1, 25])
+    col1, col2 = st.columns([1, 8])
 
     # Column for logo
     with col1:
@@ -459,7 +459,7 @@ def refine_results_openai(query, resources):
 # SEO UI
 def SEO():
     # Title and logo side by side
-    col1, col2 = st.columns([1, 25])
+    col1, col2 = st.columns([1, 8])
 
     # Column for logo
     with col1:
@@ -629,7 +629,7 @@ def generate_editor_aid(curriculum_performance):
 # Student Report Tool UI
 def report_tool():
     # Title and logo side by side
-    col1, col2 = st.columns([1, 25])
+    col1, col2 = st.columns([1, 8])
 
     # Column for logo
     with col1:
